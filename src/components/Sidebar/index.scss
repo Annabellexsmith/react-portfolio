@@ -1,0 +1,114 @@
+.nav-bar {
+  background-color: rgba(246, 137, 246, 0.86);
+  width: 8%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    display: block;
+    padding: 1rem 0;
+    width: 100%;
+
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    height: 210px;
+    margin-top: 20%;
+    margin-bottom: auto;
+    width: 100%;
+
+    .icon {
+      width: 80%;
+    }
+
+    a {
+      font-size: 5rem;
+      color: #444496;
+      display: block;
+      line-height: 8rem;
+      height: 8rem;
+      position: relative;
+      padding: 7px 0;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        color: #2c2c2c;
+      }
+
+      svg {
+        transition: all 0.3s ease-out;
+        opacity: 1;
+      }
+
+      &:hover svg {
+        opacity: 0;
+      }
+
+      &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 4px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover:after {
+        opacity: 1;
+      }
+
+      &:first-child:after {
+        content: 'HOME';
+        font-size: small;
+      }
+
+      &.about-link:after {
+        content: 'ABOUT';
+        font-size: small;
+      }
+
+      &.contact-link:after {
+        content: 'CONTACT';
+        font-size: small;
+      }
+      &.linkedin-link:after {
+        content: 'LINKEDIN';
+        font-size: small;
+      }
+      &.github-link:after {
+        content: 'GITHUB';
+        font-size: small;
+      }
+      &.resume-link:after {
+        content: 'RESUME';
+        font-size: small;
+      }
+
+      &.active {
+        svg {
+          color: rgb(228, 36, 135);
+        }
+      }
+    }
+  }
+}
