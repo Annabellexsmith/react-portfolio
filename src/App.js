@@ -1,6 +1,7 @@
 import './App.scss'
 import Layout from './components/Layout/layout'
 import Landing from './components/Landing/landing'
+import About from './components/About/about'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
      <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Landing />} />
+          <Route path="about" element={<About />} />
         </Route >
     </Routes>
     </>
