@@ -3,8 +3,20 @@ import './navbar.scss'
 import A from "../../assets/images/A.svg"
 import {  faGithub, faLinkedinIn,  } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser, faFile} from '@fortawesome/free-solid-svg-icons'
-const Sidebar = () =>  (
+import {faHome, faUser, faFile, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
+
+
+const Sidebar = () =>  {
+   const downloadResume = () => {
+      const pdfUrl ="Annabelle-Smith-Resume.pdf"
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = pdfUrl;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+   };
+   return (
  <div className='nav-bar'>
    <Link className='logo' to="/">
       <img src={A} alt="Letter A with Annabelle underneath. The A is decorated with a leaves"/>
@@ -28,10 +40,10 @@ const Sidebar = () =>  (
    <NavLink 
       exact="true" 
       activeclassname="active" 
-      className="contact-link" 
-      to="/contact"
+      className="portfolio-link" 
+      to="/portfolio"
       >
-      <FontAwesomeIcon className='icon' icon={faEnvelope} color="#FBFCF8" />
+      <FontAwesomeIcon className='icon' icon={faLaptopCode} color="#FBFCF8" />
    </NavLink>
    <NavLink 
       exact="true" 
@@ -53,13 +65,12 @@ const Sidebar = () =>  (
       exact="true" 
       activeclassname="active" 
       className="resume-link" 
-      to="/"
+      onClick={downloadResume} 
       >
       <FontAwesomeIcon className='icon' icon={faFile} color="#FBFCF8" />
    </NavLink>
  </nav>
  </div>
-
 )
-
+}
 export default Sidebar
