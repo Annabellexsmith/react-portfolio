@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
-import './index.scss'
+import './navbar.scss'
 import A from "../../assets/images/A.svg"
-import {  faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import {  faGithub, faLinkedinIn,  } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser, faFile} from '@fortawesome/free-solid-svg-icons'
 const Sidebar = () =>  (
