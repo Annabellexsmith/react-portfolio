@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Helvetica Neue', 'san-serif';
+  font: 800 11px/1.4 'Helvetica Neue', 'san-serif';
   color:#141414;
   background-image: url(/src/assets/images/pink-background.svg) ;
   overflow: hidden;
