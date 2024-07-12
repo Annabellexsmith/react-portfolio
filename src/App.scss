@@ -1,4 +1,5 @@
 $primary-color: #f2f2f2;
+
 @import 'animate.css';
 @import '~loaders.css/src/animations/ball-spin-fade-loader.scss';
 
@@ -15,6 +16,12 @@ $primary-color: #f2f2f2;
 @font-face {
   font-family: 'Coolvetica';
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+h1 {
+  font-family:'Helvetica Neue';
+  font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 5rem;
 }
 
 input, 

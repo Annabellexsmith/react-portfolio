@@ -11,7 +11,7 @@ export const projectData = [
         "id": "2", 
         "title": "Rx Remix",
         "imageSrc": "https://i.imgur.com/Wm8gVzX.png",
-        "description": "I executed all aspects of this MEN-stack application using JavaScript, Node.js, Express, and MongoDB. This centralized platform enables nurses to efficiently manage and access medication notes, streamlining their workflow and enhancing medication safety.",
+        "description": "I executed all aspects of this MEN-stack application using JavaScript, Node.js, Express, and MongoDB. This centralized platform enables nurses to efficiently manage and access medication notes, streamlining tAheir workflow and enhancing medication safety.",
         "demo": "https://rx-remix-a5970d775514.herokuapp.com/",
         "source": "https://github.com/Annabellexsmith/Medication-Reference-Guide-Application"
     }, 
