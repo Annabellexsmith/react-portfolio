@@ -65,6 +65,7 @@ const Sidebar = () =>  {
       exact="true" 
       activeclassname="active" 
       className="resume-link" 
+      to='about'
       onClick={downloadResume} 
       >
       <FontAwesomeIcon className='icon' icon={faFile} color="#FBFCF8" />

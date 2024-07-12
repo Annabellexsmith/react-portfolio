@@ -12,7 +12,7 @@ const Landing = () => {
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                   <Typewriter text={name} delay={200} /> </h1>
+                   <Typewriter text={name} delay={100} /> </h1>
                 <br />
                 <h2> Full-Stack Software Engineer | Oncology Nurse | Fiber Arts Enthusiast </h2>
                 <Link to="/contact" className="flat-button">Contact me</Link>
