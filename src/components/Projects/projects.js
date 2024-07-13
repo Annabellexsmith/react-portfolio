@@ -1,6 +1,6 @@
 import { projectData } from '../../data'
 import './projects.scss'
-import Typewriter from '../Landing/typewriter'
+import {Typewriter} from '../Landing/typewriter'
 import Loader from 'react-loaders'
 
 export const ProjectCard = () => {

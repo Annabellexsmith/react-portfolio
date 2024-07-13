@@ -35,6 +35,7 @@ export const About = () => {
           alt="A selfie of Annabelle smiling"
           className="selfie"
         />
+
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>
