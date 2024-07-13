@@ -1,27 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 import './landing.scss'
-import Typewriter from './typewriter';
-import Loader from 'react-loaders';
+import Typewriter from './typewriter'
+import Loader from 'react-loaders'
 
+export const Landing = () => {
+  const name = "Hello, I'm Annabelle"
 
-const Landing = () => {
-    const name = "Hello, I'm Annabelle";
-
-    return (
-        <>
-        <div className="container home-page">
-            <div className="text-zone">
-                <h1>
-                   <Typewriter text={name} delay={100} /> </h1>
-                <br />
-                <h2> Full-Stack Software Engineer | Oncology Nurse | Fiber Arts Enthusiast </h2>
-                <Link to="/contact" className="flat-button">Contact me</Link>
-            </div>
+  return (
+    <>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <Typewriter text={name} delay={100} />{' '}
+          </h1>
+          <br />
+          <h2>
+            {' '}
+            Full-Stack Software Engineer | Oncology Nurse | Fiber Arts
+            Enthusiast{' '}
+          </h2>
+          <Link to="/contact" className="flat-button">
+            Contact me
+          </Link>
         </div>
-        <Loader type='ball-spin-fade-loader' />
-        </>
-    );
-};
-
-
-export default Landing
+      </div>
+      <Loader type="ball-spin-fade-loader" />
+    </>
+  )
+}
